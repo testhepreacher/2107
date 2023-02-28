@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2107 ATELIER</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/78efde65da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="sm-links">
+        <a href="tel:"><i class="fa-solid fa-phone"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+      <div class="logo">
+        <img src="circles.png" alt="" />
+      </div>
+      <div class="menu-img">
+        <i class="fa-solid fa-bars" id="toggle-btn"></i>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="index.html" class="home"><span>Home</span></a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="contact-field">
+      <div class="contacts" id="contact">
+        <header>contact-us</header>
+        <h3>
+          We’d love to hear from you. 
+          Would you like to discuss a project?
+        </h3>
+        <p>
+          Are you interested in collaborating and working with us? Please don’t
+          hesitate to contact us. <br />
+          You can give us a call on <a href="tel:">+234-(0)-814-5622-502</a>, or
+          send us an email <a href="mailto:">2107atelier@gmail.com</a> .
+        </p>
+      </div>
+      <div class="container">
+        <form>
+          <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" />
+          </div>
+
+          <div class="input-group">
+            <label>Phone No.</label>
+            <input type="tel" placeholder="123 456 7890" />
+          </div>
+
+          <div class="input-group">
+            <label>Email Id</label>
+            <input type="email" placeholder="Enter Email" />
+          </div>
+
+          <div class="input-group">
+            <label>Your Message</label>
+            <textarea rows="5" placeholder="Enter your message"></textarea>
+          </div>
+
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      const togglebtn = document.querySelector("#toggle-btn");
+      const navbarlinks = document.querySelector(".navbar-links");
+
+      togglebtn.addEventListener("click", () => {
+        navbarlinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

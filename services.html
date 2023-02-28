@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2107 ATELIER</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/78efde65da.js"crossorigin="anonymous"></script>    
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="sm-links">
+            <a href="tel:"><i class="fa-solid fa-phone"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+          <div class="logo">
+            <img src="circles.png" alt="">
+          </div>
+      <div class="menu-img">
+        <i class="fa-solid fa-bars" id="toggle-btn"></i>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="index.html" class="home"><span>Home</span></a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="services">
+        <header>SERVICES</header>
+        <h2>learn more about our interior design services</h2>
+        <p>
+          Our range of services covers all your business and residential interior
+          design needs. From <br />
+          shopping lists to complete design plans, we've got what you want.
+        </p>
+        <div class="image-links">
+          <div class="images">
+            <a href=""><img src="des-1.jpg" alt="" /></a>
+            <h3>Design <i class="fa-solid fa-chevron-right"></i></h3>
+          </div>
+          <div class="images">
+            <a href=""><img src="des-4.png" alt="" /></a>
+            <h3>Build <i class="fa-solid fa-chevron-right"></i></h3>
+          </div>
+          <div class="images">
+            <a href=""
+              ><img src="christian-mackie-lDlU1zbjGQA-unsplash.jpg" alt=""
+            /></a>
+            <h3>Consultancy <i class="fa-solid fa-chevron-right"></i></h3>
+          </div>
+          <div class="images">
+            <a href=""><img src="des-2.png" alt="" /></a>
+            <h3>Art <i class="fa-solid fa-chevron-right"></i></h3>
+          </div>
+        </div>
+      </div>
+   
+    <script>
+      const togglebtn = document.querySelector("#toggle-btn");
+      const navbarlinks = document.querySelector(".navbar-links");
+
+      togglebtn.addEventListener("click", () => {
+        navbarlinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
