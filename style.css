@@ -416,6 +416,44 @@ form button{
 #overlay a:hover {
     color: #c79d33;
 }
+#services {
+    padding: 50px 150px;
+    background-color: #8a8a8a;
+    /* opacity: 60%; */
+    color: white;
+    margin-top: 50px;
+}
+#services header {
+    font-weight: 800;
+    color: #c79d33;
+}
+#services h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin: 5px;
+}
+#services p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 5px;
+}
+.image-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.images {
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+.images img {
+    width: 300px;
+}
+.images:hover {
+    border: 1px solid #777;
+}
 
 
 .footer {
@@ -434,7 +472,7 @@ form button{
 footer span {
     color: #c79d33;
 }
-.logo {
+.logo-1 {
     display: flex;
 }
 .col1 img {
