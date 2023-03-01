@@ -196,8 +196,9 @@ body, html {
     align-items: center;
     justify-content: space-between;
     margin: 50px 100px;
+    /* width: 600px; */
 }
-.container{
+.container-1{
     width: 100%;
     height: 100vh;
     /* background: #141a34; */
@@ -205,7 +206,7 @@ body, html {
     align-items: center;
     justify-content: center;
 }
-.container form{
+.container-1 form{
     width: 90%;
     max-width: 500px;
     padding: 50px 30px 20px;
@@ -273,9 +274,199 @@ form button{
     text-decoration: none;
     
 }
+.commercial-pro {
+    margin: 50px 150px;
+   display: grid;
+   grid-template-columns: 600px 600px;
+   gap: 100px;
+}
+.container {
+    /* position: relative; */
+    width: 500px;
+    height: 500px;
+    margin: 0;
+  }
+  .container img {
+    width: 600px;
+    height: 400px;
+    /* margin-left: 100px; */
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    /* width: 300px; */
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* -ms-transform: translate(-50%, -50%)  */
+    /* display: flex;
+    flex-direction: column; */
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    /* background-color: #4CAF50; */
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
 .residential h3, .commercial h3 {
     text-transform: uppercase;
     text-decoration: underline;
+}
+.raven-land {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 200px;
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+    height: auto;
+    width: auto;
+
+}
+.raven-img {
+    
+    height: 524px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.raven-img img {
+    width: auto;
+    height: 512px;
+    /* flex-basis: 100%; */
+}
+.project-raven {
+    background: #1c1f1f;
+    color: white;
+    width: 400px;
+    height: 190px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    transform: translate(300px, -180px);
+}
+.project-raven h4 {
+    margin-top: 0;
+}
+.project-raven p {
+    font-size: .9rem;
+}
+.pro-details {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.pro-details span {
+    margin-right: 12px;
+}
+.pro-brief {
+    margin: 0 200px;
+    font-size: 1.1rem;
+    color: #777;
+}
+.pro-brief h2 {
+    color: #c79d33;
+}
+.projects-col {
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    gap: 20px;
+    /* margin: 25px 100px; */
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'NM';
+    line-height: 1.3;
+    letter-spacing: 0.04rem;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#overlay {
+    /* background-color: #f4f4f4; */
+    /* padding: 12px; */
+}
+#overlay img {
+    width: 450px;
+    height: 400px;
+}
+#overlay img:hover {
+    cursor: pointer;
+    border: 1px solid #1c1f1f;
+}
+#overlay a:hover {
+    color: #c79d33;
+}
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 150px;
+    /* background-color: #8a8a8a; */
+    /* opacity: 60%; */
+    color: white;
+    margin-top: 40px;
+    height: 80vh;
+    text-align: center;
+}
+#services header {
+    font-weight: 800;
+    color: #c79d33;
+    padding: 12px;
+    font-size: 30px;
+}
+#services h2 {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: #1c1f1f;
+    padding: 12px;
+}
+#services p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 5px;
+}
+.image-links {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    gap: 50px;
+    box-sizing: border-box;
+    
+}
+.images {
+    background-color: #1c1f1f;
+    background: rgba(0, 0, 0, 0.5);
+}
+.images:hover {
+    border: 1px solid #777;
+}
+.images img {
+    width: 350px;
+    height: 280px; 
+}
+.images h3 {
+    padding:0 25px;
 }
 
 
@@ -295,7 +486,7 @@ form button{
 footer span {
     color: #c79d33;
 }
-.logo {
+.logo-1 {
     display: flex;
 }
 .col1 img {
