@@ -21,7 +21,7 @@
         <a href=""><i class="fa-brands fa-pinterest"></i></a>
       </div>
       <div class="logo">
-        <img src="circles.png" alt="" />
+        <img src="./img/circles.png" alt="" />
       </div>
       <div class="menu-img">
         <i class="fa-solid fa-bars" id="toggle-btn"></i>
@@ -51,10 +51,10 @@
         var time = 2000; // Time Between Switch
 
         // Image List
-        images[0] = "image1.jpg";
-        images[1] = "image2.jpg";
-        images[2] = "image3.jpg";
-        images[3] = "image4.jpg";
+        images[0] = "./img/image1.jpg";
+        images[1] = "./img/image2.jpg";
+        images[2] = "./img/image3.jpg";
+        images[3] = "./img/image4.jpg";
         // Change Image
         function changeImg() {
           document.slide.src = images[i];
@@ -75,7 +75,7 @@
         // Run function when page loads
         window.onload = changeImg;
       </script>
-      <img name="slide" width="650px" height="400px" />
+      <img name="slide" width="650px" height="400px" class="slide"/>
     </div>
     <div class="testimonial">
       <div class="h2">
@@ -125,7 +125,7 @@
     <div class="footer">
       <div class="col1">
         <div class="logo-1">
-          <img src="circles.png" alt="" />
+          <img src="./img/circles.png" alt="" />
           <div class="name">
             <h3>2107</h3>
             <h3>Atelier</h3>

@@ -17,6 +17,7 @@ body, html {
     color: floralwhite;
     padding: 0 90px;
     position: fixed;
+    z-index: 2;
     width: 100%;
     margin-bottom: 50px;
 }
@@ -196,6 +197,8 @@ body, html {
     align-items: center;
     justify-content: space-between;
     margin: 50px 100px;
+    flex-direction: column;
+    width: 100%;
     /* width: 600px; */
 }
 .container-1{
@@ -281,34 +284,27 @@ form button{
    gap: 100px;
 }
 .container {
-    /* position: relative; */
-    width: 500px;
-    height: 500px;
-    margin: 0;
+    position: relative;
+    width: 50%;
   }
-  .container img {
-    width: 600px;
-    height: 400px;
-    /* margin-left: 100px; */
-  }
+  
   .image {
     opacity: 1;
     display: block;
+    width: 600px;
+    height: 400px;
     transition: .5s ease;
     backface-visibility: hidden;
-    /* width: 300px; */
   }
   
   .middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* -ms-transform: translate(-50%, -50%)  */
-    /* display: flex;
-    flex-direction: column; */
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
   }
   
   .container:hover .image {
@@ -320,11 +316,10 @@ form button{
   }
   
   .text {
-    /* background-color: #4CAF50; */
     color: black;
-    font-size: 16px;
-    padding: 16px 32px;
+    font-size: 28px;
   }
+
 .residential h3, .commercial h3 {
     text-transform: uppercase;
     text-decoration: underline;
@@ -582,11 +577,243 @@ footer span {
     .navbar-links.active {
         display: flex;
     }
+    .logo {
+        display: none;
+    }
+    .slide {
+        width: 400px;
+        height: 260px;
+    }
+    .testi-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .testi-text br {
+        display: none;
+    }
+    .logo-1 {
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+    
     .sm-links {
         margin-left: 10px;
     }
     .sm-links a i {
         padding: 8px;
+    }
+    #about {
+        flex-direction: column-reverse;
+        padding: 10px;
+        align-items: center;
+        margin: 20px;
+        margin-top: 50px;
+    }
+    .about-us {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-us h2 {
+        color: #c79d33;
+    
+    }
+    .about-us h3 {
+        font-size: 2rem;
+    }
+    .about-us p {
+        width: 350px;
+    }
+    .about-us a button :hover {
+        background-color: #777;
+    }
+    .about-img, .about-img img {
+        width: 350px;
+        height: auto;
+    }
+    #services {
+        padding: 10px;
+        margin: 150px 0;
+    }
+    .image-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .images {
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        /* margin: 50px 0; */
+    }
+    .images img {
+        width: 300px;
+    }
+    .images:hover {
+        border: 1px solid #777;
+    }
+    .projects {
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .pro-btn {
+        /* background-color: #1c1f1f; */
+        border: none;
+    }
+    .col-1, .col-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-1, .img-2, .overlay img {
+        width: 350px;
+        height: 350px;
+    }
+    .contact-field {
+        margin: 100px 0;
+        justify-content: space-evenly;
+
+    }
+    .container-1 {
+        height: auto;
+    }
+    .contacts {
+        padding: 10px;
+    }
+    .contacts h3 {
+        font-size: 1.8rem;
+    }
+    .contacts p {
+        font-weight: 100;
+        line-height: normal;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+    }
+    .col-2 li a:hover {
+        color: #c79d33;
+    }
+    .Q-links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .col2, .col1, .col3 {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .link1, .link2 {
+        display: flex;
+    }
+    .logo {
+        align-items: center;
+        justify-content: center;
+    }
+    .col2 strong, .col3 strong {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #c79d33;
+    }
+    footer {
+        display: none;
+    }
+    .copyright {
+        display: block;
+    }
+    .footer a:hover {
+        color: lightgray;
+    }
+    .projects-main {
+        padding: 0;
+    }
+    .pro-item {
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;;
+        padding: 20px;
+    }
+    .pro-item img {
+        width: 300px;
+        height: 300px;
+    }
+    #overlay {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    #overlay img {
+        width: 300px;
+        height: 300px;
+    }
+    .projects-col {
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        grid-template-columns: 300px;
+        margin-bottom: 40px;
+    }
+    .pro-brief {
+        margin: 0 10px;
+    }
+    .raven-land {
+        margin: 10px;
+        height: fit-content;
+    }
+    .project-raven {
+        width: auto;
+        height: auto;
+    }
+    .raven-img {
+        height: auto;
+    }
+    .raven-img img {
+        width: 300px;
+        height: 300px;
+    }
+    .project-raven {
+        width: 285px;
+        transform: translate(38px, -70px);
+        /* padding: 0; */
+    }
+    .project-raven h4 {
+        margin-bottom: 0;
+    }
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .projects a button {
+        margin: 20px 100px;
+        padding: 12px;
+
+    }
+    .commercial-pro {
+        margin: 0;
+        grid-template-columns: 350px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .image {
+        width: 350px;
+        height: auto;
     }
 }
 
