@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -189,3 +190,196 @@
     <script src="script.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2107 ATELIER</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/78efde65da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="sm-links">
+        <a href="tel:"><i class="fa-solid fa-phone"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+      <div class="logo">
+        <img src="circles.png" alt="" />
+      </div>
+      <div class="menu-img">
+        <i class="fa-solid fa-bars" id="toggle-btn"></i>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="index.html" class="home"><span>Home</span></a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="brand-name">
+      <h1>
+        2107  <br />
+        <span>Atelier Designs</span>
+      </h1>
+    </div>
+    <div class="image-slider">
+      <script>
+        var i = 0; // Start Point
+        var images = []; // Images Array
+        var time = 2000; // Time Between Switch
+
+        // Image List
+        images[0] = "image1.jpg";
+        images[1] = "image2.jpg";
+        images[2] = "image3.jpg";
+        images[3] = "image4.jpg";
+        // Change Image
+        function changeImg() {
+          document.slide.src = images[i];
+
+          // Check If Index Is Under Max
+          if (i < images.length - 1) {
+            // Add 1 to Index
+            i++;
+          } else {
+            // Reset Back To O
+            i = 0;
+          }
+
+          // Run function every x seconds
+          setTimeout("changeImg()", time);
+        }
+
+        // Run function when page loads
+        window.onload = changeImg;
+      </script>
+      <img name="slide" width="650px" height="400px" />
+    </div>
+    <div class="testimonial">
+      <div class="h2">
+        Testimonial
+        <div class="hr"></div>
+      </div>
+      <div class="testi-text">
+        "The team put a lot of careful thought into the decoration, furniture <br>
+        and accessories to promote a relaxing and comforting atmosphere."
+      </div>
+      <div class="controls">
+        <input
+          type="radio"
+          name="radio-btn"
+          id="radio1"
+          onclick="changetext1()"
+        />
+        <input
+          type="radio"
+          name="radio-btn"
+          id="radio3"
+          onclick="changetext5()"
+        />
+        <input
+          type="radio"
+          name="radio-btn"
+          id="radio3"
+          onclick="changetext3()"
+        />
+      </div>
+      <script>
+        function changetext1() {
+          document.querySelector(".testi-text").innerHTML =
+            '"The team put a lot of careful thought into the decoration, furniture <br> and accessories to promote a relaxing and comforting atmosphere."';
+        }
+        function changetext5() {
+          document.querySelector(".testi-text").innerHTML =
+            '"They transformed the space and totally exceeded our expectations."';
+        }
+        function changetext3() {
+          document.querySelector(".testi-text").innerHTML =
+            '"The new look has completely changed the ambience of the center."';
+        }
+      </script>
+    </div>
+
+    <div class="footer">
+      <div class="col1">
+        <div class="logo-1">
+          <img src="circles.png" alt="" />
+          <div class="name">
+            <h3>2107</h3>
+            <h3>Atelier</h3>
+          </div>
+        </div>
+        <p>
+          We are passionate about improving lives through exceptional design and
+          excellent execution. Our pillars are Creative Design, Experiential
+          Spaces, Excellent Delivery.
+        </p>
+        <footer>
+          Copyright © 2107 <span>Atelier</span> 2022. All rights reserved.
+        </footer>
+      </div>
+      <div class="col2">
+        <strong>QUICK LINKS</strong>
+        <div class="Q-links">
+          <div class="link1">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">our services</a></li>
+            <li><a href="#about">about</a></li>
+          </div>
+          <div class="link2">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href=""> </a></li>
+          </div>
+        </div>
+      </div>
+      <div class="col3">
+        <strong>contact us</strong>
+        <p>
+          philkruz estate 2, phase 4, kubwa , <br />
+          abuja
+        </p>
+        <br />
+        <a href="mailto:">2107atelier@gmail.com</a>
+        <br />
+        <p><a href="tel:">+234 (0) 814 5622 502</a></p>
+        <br />
+        <div class="sm-links">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="copyright">
+      Copyright © 2107 <span>Atelier</span> 2022. All rights reserved.
+    </div>
+    <script>
+      const togglebtn = document.querySelector("#toggle-btn");
+      const navbarlinks = document.querySelector(".navbar-links");
+
+      togglebtn.addEventListener("click", () => {
+        navbarlinks.classList.toggle("active");
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
+>>>>>>> 4a4ae2d04b075cd327d80a4d82af479b31e5557c
