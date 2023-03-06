@@ -405,7 +405,11 @@ form button{
     width: 450px;
     height: 400px;
 }
-#overlay img:hover {
+#overlay-1 img{
+    width: 450px;
+    height: 500px;
+}
+#overlay img:hover, #overlay-1 img:hover {
     cursor: pointer;
     border: 1px solid #1c1f1f;
 }
