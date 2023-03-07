@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Lora', serif;
 }
 
 .sm-links a i {
@@ -15,7 +16,7 @@ body, html {
     align-items: center;
     background-color: black;
     color: floralwhite;
-    padding: 0 90px;
+    /* padding: 0 90px; */
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -273,7 +274,7 @@ form button{
     width: 370px;
 }
 .residential a, .commercial a {
-    color: #8a8a8a;
+    color: #000;
     text-decoration: none;
     
 }
@@ -397,10 +398,6 @@ form button{
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-#overlay {
-    /* background-color: #f4f4f4; */
-    /* padding: 12px; */
-}
 #overlay img {
     width: 450px;
     height: 400px;
@@ -443,6 +440,7 @@ form button{
 #services p {
     font-size: 1.1rem;
     font-weight: 300;
+    padding: 12px;
     padding-bottom: 18px;
     color: #1c1f1f;
 }
@@ -474,6 +472,45 @@ form button{
 .images h3 {
     font-size: 18px;
 }
+.servicedet {
+    margin: 25px 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.servicedet h4{
+    font-weight: 300;
+    color: #c79d33;
+}
+.servicedet h2 {
+    font-size: 36px;
+    /* margin: 0; */
+}
+.servicedet p {
+    font-size: 18px;
+}
+.des-text {
+    margin-right: 30px;
+    width: auto;
+}
+.des-text h2 {
+    margin: 15px 0;
+}
+.des-text span {
+    font-size: 14px;
+    margin: 0;
+}
+.des-text li {
+    margin-top: 10px;
+}
+.des-img-2 {
+    margin-right: 30px;
+}
+.des-img img, .des-img-2 img {
+    width: 612px;
+    height: auto;
+}
+
 
 
 .footer {
@@ -647,7 +684,10 @@ footer span {
     #services {
         /* padding: 10px; */
         padding: auto;
-        margin: 50px 0;
+        margin: 50px 10px;
+    }
+    #services br {
+        display: none;
     }
     .image-links {
         display: flex;
@@ -658,11 +698,11 @@ footer span {
     .images {
         align-items: center;
         justify-content: center;
-        width: 300px;
+        width: 350px;
         /* margin: 50px 0; */
     }
     .images img {
-        width: 300px;
+        width: 350px;
     }
     .images:hover {
         border: 1px solid #777;
