@@ -76,6 +76,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: left;
     font-size: 30px;
     color: #c79d33;
     margin-top: 50px;
@@ -90,7 +91,7 @@ body, html {
 }
 .brand-name h1 span {
     display: block;
-   text-align: right;
+   text-align: left;
     color: #8a8a8a;
     font-size: 40px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -665,6 +666,15 @@ footer span {
     }
     .sm-links a i {
         padding: 8px;
+    }
+    .brand-name h1 {
+        font-size: 40px;
+    }
+    .brand-name h1 span {
+        font-size: 30px;
+    }
+    .circles img {
+        height: 120px;
     }
     #about {
         flex-direction: column-reverse;
